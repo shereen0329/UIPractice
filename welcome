@@ -1,1 +1,16 @@
+#include <iostream>
+using namespace std;
+
+
+int main(int argc, char* argv[]) {
+    if (argc != 3) {
+        cout << "argc:" << argc << endl;
+        cout << "    " << argv[0] << "user" << endl;
+    }
+    else {
+        cout << "Welcome"<<"    " << argv[1] << "." << endl;
+        cout << "I am"<<"   " << argv[2] << endl;
+    }
+    return 0;
+}
 
