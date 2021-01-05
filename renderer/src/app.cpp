@@ -86,13 +86,13 @@ void App::add_listener(const std::string& event, Listener *listener) {
  **/
 void App::hello() {
     Text text_ = Text("../resources/font/jason_writing_1.ttf");
-    SDL_Texture *hello = text_.get_text(renderer_, "Hi SDL");
+    SDL_Texture *hello = text_.get_text(renderer_, "Hi Shereen");
 
     SDL_Rect rect;
-    rect.x = (800 - 634) / 2;
-    rect.y = (900 - 655) / 3;
-    rect.w = 234;s
-    rect.h = 135;
+    rect.x = (700- 600) / 2;
+    rect.y = (545 - 500) / 3;
+    rect.w = 300;
+    rect.h =100;
 
     SDL_RenderClear(renderer_);
     SDL_RenderCopy(renderer_, hello, nullptr, &rect);
